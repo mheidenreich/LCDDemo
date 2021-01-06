@@ -67,6 +67,7 @@ except KeyboardInterrupt:
 
 finally:
     reading = False
-    sleep(0.5)
+    reader.join()
+    display.join()
     lcd.clear()
     sensor.close()
